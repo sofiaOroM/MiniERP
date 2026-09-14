@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="00a83a4c-c386-490e-85aa-cb8f959504db" name="Changes" comment="Manejo de categorias" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Exception" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sofiaOroM&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sofiaOroM/MiniERP.git&quot;,
+    &quot;accountId&quot;: &quot;f319c75a-4828-4b90-8746-a395893ba0dc&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="3JDdamD8HuC9nLfl7mp1Shsq2tN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "322",
+    "RequestMappingsPanelWidth1": "322",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.MiniErpApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sofia\Desktop\Archivos\Proyecto1\MiniERP\MiniERP\src\main\java\sofiao\minierp\dto" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sofiao.minierp.entity" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MiniErpApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="MiniERP" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="sofiao.minierp.MiniErpApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00a83a4c-c386-490e-85aa-cb8f959504db" name="Changes" comment="" />
+      <created>1789199641599</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1789199641599</updated>
+      <workItem from="1789199643020" duration="14067000" />
+      <workItem from="1789366746879" duration="9064000" />
+    </task>
+    <task id="LOCAL-00001" summary="Usuario">
+      <option name="closed" value="true" />
+      <created>1789345691100</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1789345691100</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Inicial">
+      <option name="closed" value="true" />
+      <created>1789345777761</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1789345777761</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Manejo de Usuarios">
+      <option name="closed" value="true" />
+      <created>1789373055274</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1789373055274</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Manejo de Proveedores">
+      <option name="closed" value="true" />
+      <created>1789373109913</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1789373109913</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Manejo de Productos">
+      <option name="closed" value="true" />
+      <created>1789373160624</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1789373160625</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Manejo de Clientes">
+      <option name="closed" value="true" />
+      <created>1789373183752</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1789373183752</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Manejo de Compras">
+      <option name="closed" value="true" />
+      <created>1789373307965</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1789373307965</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Manejo de Categorias">
+      <option name="closed" value="true" />
+      <created>1789373343463</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1789373343463</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Manejo de Ventas">
+      <option name="closed" value="true" />
+      <created>1789373531730</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1789373531730</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Excepciones">
+      <option name="closed" value="true" />
+      <created>1789373552425</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1789373552425</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Excepciones">
+      <option name="closed" value="true" />
+      <created>1789404313866</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1789404313866</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Autenticación">
+      <option name="closed" value="true" />
+      <created>1789404346841</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1789404346841</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Login">
+      <option name="closed" value="true" />
+      <created>1789404431081</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1789404431081</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Manejo del inventario">
+      <option name="closed" value="true" />
+      <created>1789404654126</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1789404654126</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Seguridad">
+      <option name="closed" value="true" />
+      <created>1789404749650</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1789404749650</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Configuración">
+      <option name="closed" value="true" />
+      <created>1789404791844</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1789404791844</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Clientes y Usuarios">
+      <option name="closed" value="true" />
+      <created>1789404895070</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1789404895070</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Manejo de roles">
+      <option name="closed" value="true" />
+      <created>1789404919253</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1789404919253</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Manejo de compras">
+      <option name="closed" value="true" />
+      <created>1789405024236</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1789405024236</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Seguridad">
+      <option name="closed" value="true" />
+      <created>1789405046483</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1789405046483</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Manejo de ventas">
+      <option name="closed" value="true" />
+      <created>1789405103486</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1789405103486</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Manejo de ventas">
+      <option name="closed" value="true" />
+      <created>1789405121086</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1789405121086</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Manejo de proveedores">
+      <option name="closed" value="true" />
+      <created>1789405146466</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1789405146466</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Manejo de productos">
+      <option name="closed" value="true" />
+      <created>1789405162718</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1789405162718</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Manejo de Logs">
+      <option name="closed" value="true" />
+      <created>1789405196803</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1789405196803</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Enum Acciones, Metodos de costeo, modulos">
+      <option name="closed" value="true" />
+      <created>1789405223382</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1789405223382</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Manejo de categorias">
+      <option name="closed" value="true" />
+      <created>1789405254003</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1789405254003</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Usuario" />
+    <MESSAGE value="Inicial" />
+    <MESSAGE value="Manejo de Usuarios" />
+    <MESSAGE value="Manejo de Proveedores" />
+    <MESSAGE value="Manejo de Productos" />
+    <MESSAGE value="Manejo de Clientes" />
+    <MESSAGE value="Manejo de Compras" />
+    <MESSAGE value="Manejo de Categorias" />
+    <MESSAGE value="Manejo de Ventas" />
+    <MESSAGE value="Excepciones" />
+    <MESSAGE value="Autenticación" />
+    <MESSAGE value="Login" />
+    <MESSAGE value="Manejo del inventario" />
+    <MESSAGE value="Configuración" />
+    <MESSAGE value="Clientes y Usuarios" />
+    <MESSAGE value="Manejo de roles" />
+    <MESSAGE value="Manejo de compras" />
+    <MESSAGE value="Seguridad" />
+    <MESSAGE value="Manejo de ventas" />
+    <MESSAGE value="Manejo de proveedores" />
+    <MESSAGE value="Manejo de productos" />
+    <MESSAGE value="Manejo de Logs" />
+    <MESSAGE value="Enum Acciones, Metodos de costeo, modulos" />
+    <MESSAGE value="Manejo de categorias" />
+    <option name="LAST_COMMIT_MESSAGE" value="Manejo de categorias" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/sofiao/minierp/config/SecurityConfig.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
