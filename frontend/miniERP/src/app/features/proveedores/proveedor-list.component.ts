@@ -1,5 +1,6 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 import { ProveedorService } from '../../core/services/proveedor.service';
 import { AuthService } from '../../core/services/auth.service';
 import { ConfirmDialogService } from '../../shared/confirm-dialog/confirm-dialog.service';
@@ -9,7 +10,7 @@ import { Proveedor } from '../../core/models/proveedor.model';
 @Component({
   selector: 'app-proveedor-list',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, FormsModule],
   template: `
     <div class="page-header">
       <h1>Proveedores</h1>
@@ -17,6 +18,10 @@ import { Proveedor } from '../../core/models/proveedor.model';
         <a class="btn btn-primary" routerLink="/proveedores/nuevo">+ Nuevo proveedor</a>
       }
     </div>
+
+    <input type="text" placeholder="Buscar por nombre, NIT o email..."
+           [ngModel]="filtro()" (ngModelChange)="filtro.set($event)"
+           style="margin-bottom:16px; padding:8px; width:320px; border:1px solid #ccc; border-radius:4px;" />
 
     <table class="data-table">
       <thead>
@@ -26,7 +31,7 @@ import { Proveedor } from '../../core/models/proveedor.model';
       </tr>
       </thead>
       <tbody>
-        @for (p of proveedores(); track p.id) {
+        @for (p of filtrados(); track p.id) {
           <tr>
             <td>{{ p.nombre }}</td>
             <td>{{ p.nit }}</td>
@@ -51,6 +56,17 @@ export class ProveedorListComponent {
   auth = inject(AuthService);
 
   proveedores = signal<Proveedor[]>([]);
+  filtro = signal('');
+
+  filtrados = computed(() => {
+    const texto = this.filtro().trim().toLowerCase();
+    if (!texto) return this.proveedores();
+    return this.proveedores().filter((p) =>
+      p.nombre.toLowerCase().includes(texto) ||
+      p.nit.toLowerCase().includes(texto) ||
+      (p.email ?? '').toLowerCase().includes(texto)
+    );
+  });
 
   constructor() {
     this.cargar();
