@@ -34,20 +34,13 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
 
-   /* @Bean
+    @Bean
     public DaoAuthenticationProvider authenticationProvider() {
-        DaoAuthenticationProvider provider = new DaoAuthenticationProvider(userDetailsService);
+        DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
+        provider.setUserDetailsService(userDetailsService);
         provider.setPasswordEncoder(passwordEncoder());
         return provider;
-    }*/
-
-   @Bean
-   public DaoAuthenticationProvider authenticationProvider() {
-       DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
-       provider.setUserDetailsService(userDetailsService);
-       provider.setPasswordEncoder(passwordEncoder());
-       return provider;
-   }
+    }
 
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
@@ -61,20 +54,17 @@ public class SecurityConfig {
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
-                        // Rutas públicas
-                        .requestMatchers("/api/auth/**",
-                                "/docs/**",
-                                "/v3/api-docs/**",
-                                "/swagger-ui/**",
-                                "/swagger-resources/**",
-                                "/webjars/**").permitAll()
-                        // Lo demás requiere token; el detalle fino de rol por
+                        .requestMatchers(org.springframework.http.HttpMethod.OPTIONS, "/**").permitAll()
+                        // Rutas públicas: SOLO login. /api/auth/password requiere estar autenticado (self-service de la
+                        // propia contraseña).
+                        .requestMatchers(org.springframework.http.HttpMethod.POST, "/api/auth/login").permitAll()
+                        .requestMatchers("/docs/**", "/v3/api-docs/**", "/swagger-ui/**", "/swagger-resources/**", "/webjars/**").permitAll()
+                        // Todo lo demás requiere token;
                         // verbo/endpoint se define con @PreAuthorize en cada controller
-                        // según la matriz de permisos del negocio.
                         .anyRequest().authenticated()
                 )
-                .authenticationProvider(authenticationProvider());
-               // .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
+                .authenticationProvider(authenticationProvider())
+                .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }
@@ -83,7 +73,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowedOriginPatterns(List.of("http://localhost:4200")); // app Angular
-        config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+        config.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true);
 
