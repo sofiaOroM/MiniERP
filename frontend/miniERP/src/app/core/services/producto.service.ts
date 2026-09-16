@@ -43,6 +43,10 @@ export class CategoriaService {
     return this.http.get<Categoria[]>(this.base);
   }
 
+  obtener(id: number): Observable<Categoria> {
+    return this.http.get<Categoria>(`${this.base}/${id}`);
+  }
+
   crear(categoria: Omit<Categoria, 'id'>): Observable<Categoria> {
     return this.http.post<Categoria>(this.base, categoria);
   }
