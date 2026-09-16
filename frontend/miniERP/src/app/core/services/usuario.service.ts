@@ -13,6 +13,10 @@ export class UsuarioService {
     return this.http.get<UsuarioResponse[]>(this.base);
   }
 
+  obtener(id: number): Observable<UsuarioResponse> {
+    return this.http.get<UsuarioResponse>(`${this.base}/${id}`);
+  }
+
   crear(req: UsuarioRequest): Observable<UsuarioResponse> {
     return this.http.post<UsuarioResponse>(this.base, req);
   }
