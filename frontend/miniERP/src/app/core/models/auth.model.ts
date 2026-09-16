@@ -16,3 +16,8 @@ export interface SesionActual {
   nombre: string;
   rol: LoginResponse['rol'];
 }
+
+export interface CambiarPasswordRequest {
+  passwordActual: string;
+  passwordNuevo: string;
+}

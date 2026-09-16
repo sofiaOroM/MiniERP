@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Observable, tap } from 'rxjs';
 import { environment } from '../../../environments/environment';
-import { LoginRequest, LoginResponse, SesionActual } from '../models/auth.model';
+import { CambiarPasswordRequest, LoginRequest, LoginResponse, SesionActual } from '../models/auth.model';
 
 const STORAGE_KEY = 'miniapp_sesion';
 
@@ -38,6 +38,10 @@ export class AuthService {
     localStorage.removeItem(STORAGE_KEY);
     this.sesionSignal.set(null);
     this.router.navigate(['/login']);
+  }
+
+  cambiarPassword(request: CambiarPasswordRequest): Observable<void> {
+    return this.http.put<void>(`${environment.apiUrl}/auth/password`, request);
   }
 
   getToken(): string | null {
