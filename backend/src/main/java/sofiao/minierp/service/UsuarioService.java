@@ -2,10 +2,11 @@ package sofiao.minierp.service;
 
 import sofiao.minierp.dto.usuario.UsuarioRequest;
 import sofiao.minierp.dto.usuario.UsuarioResponse;
-import sofiao.minierp.entity.Accion;
 import sofiao.minierp.entity.Log;
 import sofiao.minierp.entity.Rol;
 import sofiao.minierp.entity.Usuario;
+import sofiao.minierp.entity.Modulo;
+import sofiao.minierp.entity.Accion;
 import sofiao.minierp.exception.BusinessRuleException;
 import sofiao.minierp.exception.ResourceNotFoundException;
 import sofiao.minierp.repository.LogRepository;
@@ -20,9 +21,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-import static sofiao.minierp.entity.Accion.*;
-import static sofiao.minierp.entity.Modulo.USUARIOS;
-
 @Service
 @RequiredArgsConstructor
 public class UsuarioService {
@@ -35,6 +33,13 @@ public class UsuarioService {
     @Transactional(readOnly = true)
     public List<UsuarioResponse> listar() {
         return usuarioRepository.findAll().stream().map(UsuarioResponse::from).toList();
+    }
+
+    @Transactional(readOnly = true)
+    public UsuarioResponse obtener(Long id) {
+        return usuarioRepository.findById(id)
+                .map(UsuarioResponse::from)
+                .orElseThrow(() -> new ResourceNotFoundException("Usuario no encontrado: " + id));
     }
 
     @Transactional
@@ -53,7 +58,7 @@ public class UsuarioService {
                 .activo(true)
                 .build();
         usuario = usuarioRepository.save(usuario);
-        registrarLog(CREAR, "Usuario creado: " + usuario.getUsername() + " (" + rol.getNombre() + ")");
+        registrarLog(Accion.CREAR, "Usuario creado: " + usuario.getUsername() + " (" + rol.getNombre() + ")");
         return UsuarioResponse.from(usuario);
     }
 
@@ -70,7 +75,7 @@ public class UsuarioService {
         if (req.password() != null && !req.password().isBlank()) {
             usuario.setPasswordHash(passwordEncoder.encode(req.password()));
         }
-        registrarLog(ACTUALIZAR, "Usuario actualizado: " + usuario.getUsername());
+        registrarLog(Accion.ACTUALIZAR, "Usuario actualizado: " + usuario.getUsername());
         return UsuarioResponse.from(usuario);
     }
 
@@ -79,7 +84,7 @@ public class UsuarioService {
         Usuario usuario = usuarioRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Usuario no encontrado: " + id));
         usuario.setActivo(false); // baja lógica: conserva autoría de compras/ventas/logs históricos
-        registrarLog(ELIMINAR, "Usuario desactivado: " + usuario.getUsername());
+        registrarLog(Accion.ELIMINAR, "Usuario desactivado: " + usuario.getUsername());
     }
 
     @Transactional
@@ -87,15 +92,15 @@ public class UsuarioService {
         Usuario usuario = usuarioRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Usuario no encontrado: " + id));
         usuario.setActivo(true);
-        registrarLog(ACTUALIZAR, "Usuario reactivado: " + usuario.getUsername());
+        registrarLog(Accion.ACTUALIZAR, "Usuario reactivado: " + usuario.getUsername());
         return UsuarioResponse.from(usuario);
     }
 
-        private void registrarLog(Accion accion, String descripcion) {
+    private void registrarLog(Accion accion, String descripcion) {
         var auth = SecurityContextHolder.getContext().getAuthentication();
         UserPrincipal principal = (UserPrincipal) auth.getPrincipal();
         var actor = usuarioRepository.findById(principal.getId()).orElseThrow();
         logRepository.save(Log.builder()
-                .usuario(actor).modulo(USUARIOS).accion(accion).descripcion(descripcion).build());
+                .usuario(actor).modulo(Modulo.USUARIOS).accion(accion).descripcion(descripcion).build());
     }
 }

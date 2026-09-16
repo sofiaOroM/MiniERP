@@ -27,6 +27,11 @@ public class UsuarioController {
         return usuarioService.listar();
     }
 
+    @GetMapping("/{id}")
+    public UsuarioResponse obtener(@PathVariable Long id) {
+        return usuarioService.obtener(id);
+    }
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public UsuarioResponse crear(@Valid @RequestBody UsuarioRequest req) {
