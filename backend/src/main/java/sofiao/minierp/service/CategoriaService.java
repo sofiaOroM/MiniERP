@@ -21,6 +21,12 @@ public class CategoriaService {
         return categoriaRepository.findAll();
     }
 
+    @Transactional(readOnly = true)
+    public Categoria obtener(Integer id) {
+        return categoriaRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Categoría no encontrada: " + id));
+    }
+
     @Transactional
     public Categoria crear(CategoriaDTO dto) {
         return categoriaRepository.save(Categoria.builder().nombre(dto.nombre()).descripcion(dto.descripcion()).build());

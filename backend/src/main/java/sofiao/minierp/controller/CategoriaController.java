@@ -24,6 +24,12 @@ public class CategoriaController {
         return categoriaService.listar();
     }
 
+    @GetMapping("/{id}")
+    @PreAuthorize("hasAnyRole('ADMINISTRACION','COMPRAS','INVENTARIO','VENTAS')")
+    public Categoria obtener(@PathVariable Integer id) {
+        return categoriaService.obtener(id);
+    }
+
     @PostMapping
     @PreAuthorize("hasRole('ADMINISTRACION')")
     @ResponseStatus(HttpStatus.CREATED)
