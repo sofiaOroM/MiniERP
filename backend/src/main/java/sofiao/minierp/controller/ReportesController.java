@@ -1,5 +1,8 @@
 package sofiao.minierp.controller;
 
+import sofiao.minierp.dto.producto.ProductoResponse;
+import sofiao.minierp.dto.reportes.LogResponse;
+import sofiao.minierp.entity.Modulo;
 import sofiao.minierp.service.ReportesService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -30,7 +33,7 @@ public class ReportesController {
 
     @GetMapping("/productos/menor-existencia")
     @PreAuthorize("hasAnyRole('ADMINISTRACION','INVENTARIO')")
-    public List<?> productosConMenorExistencia() {
+    public List<ProductoResponse> productosConMenorExistencia() {
         return reportesService.productosConMenorExistencia();
     }
 
@@ -75,7 +78,7 @@ public class ReportesController {
     // ---------- Logs ----------
     @GetMapping("/logs")
     @PreAuthorize("hasRole('ADMINISTRACION')")
-    public List<?> logs(@RequestParam(required = false) String modulo) {
+    public List<LogResponse> logs(@RequestParam(required = false) Modulo modulo) {
         return modulo != null ? reportesService.logsPorModulo(modulo) : reportesService.logsRecientes();
     }
 }

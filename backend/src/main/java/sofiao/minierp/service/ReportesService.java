@@ -1,5 +1,8 @@
 package sofiao.minierp.service;
 
+import sofiao.minierp.dto.producto.ProductoResponse;
+import sofiao.minierp.dto.reportes.LogResponse;
+import sofiao.minierp.entity.Modulo;
 import sofiao.minierp.repository.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -25,7 +28,7 @@ public class ReportesService {
         return primeros(ventaDetalleRepository.findTop10ProductosMasVendidos(), 10);
     }
 
-    public List<?> productosConMenorExistencia() {
+    public List<ProductoResponse> productosConMenorExistencia() {
         return productoService.conExistenciaBaja();
     }
 
@@ -56,12 +59,12 @@ public class ReportesService {
     }
 
     // ---------- Logs ----------
-    public List<?> logsRecientes() {
-        return logRepository.findTop200ByOrderByFechaDesc();
+    public List<LogResponse> logsRecientes() {
+        return logRepository.findTop200ByOrderByFechaDesc().stream().map(LogResponse::from).toList();
     }
 
-    public List<?> logsPorModulo(String modulo) {
-        return logRepository.findByModuloOrderByFechaDesc(modulo);
+    public List<LogResponse> logsPorModulo(Modulo modulo) {
+        return logRepository.findByModuloOrderByFechaDesc(modulo).stream().map(LogResponse::from).toList();
     }
 
     private <T> List<T> primeros(List<T> lista, int n) {
