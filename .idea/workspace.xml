@@ -4,7 +4,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00a83a4c-c386-490e-85aa-cb8f959504db" name="Changes" comment="Manejo de categorias" />
+    <list default="true" id="00a83a4c-c386-490e-85aa-cb8f959504db" name="Changes" comment="Manejo de categorias">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/dto/reportes/LogResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/guards/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/guards/role.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/interceptors/auth.interceptors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/interceptors/error.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/auth.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/cliente.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/compra.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/inventario.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/producto.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/proveedor.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/usuario.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/venta.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/cliente.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/compra.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/inventario.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/notificacion.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/producto.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/proveedor.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/reporte.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/usuario.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/venta.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/categorias/categoria-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/clientes/cliente-form.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/clientes/cliente-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/compras/compra-form.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/compras/compra-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/dashboard/dashboard.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/dashboard/inicio.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/inventario/ajuste-form.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/inventario/historial.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/productos/producto-form.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/productos/producto-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/proveedores/proveedor-form.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/proveedores/proveedor-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/reportes/reportes-compras.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/reportes/reportes-logs.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/reportes/reportes-productos.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/reportes/reportes-ventas.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/usuarios/usuario-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/ventas/venta-form.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/ventas/venta-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/shared/confirm-dialog/confirm-dialog.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/shared/toast/toast.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/controller/ReportesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/controller/ReportesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/repository/LogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/repository/LogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/service/ReportesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/service/ReportesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/service/UsuarioService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,15 +128,21 @@
     "Spring Boot.MiniErpApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/sofia/Desktop/Archivos/Proyecto1/MiniERP/MiniERP/frontend/miniERP/src/app",
+    "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sofia\Desktop\Archivos\Proyecto1\MiniERP\MiniERP\frontend\miniERP\src\app" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sofia\Desktop\Archivos\Proyecto1\MiniERP\MiniERP\src\main\java\sofiao\minierp\dto" />
     </key>
@@ -106,7 +175,8 @@
       <option name="presentableId" value="Default" />
       <updated>1789199641599</updated>
       <workItem from="1789199643020" duration="14067000" />
-      <workItem from="1789366746879" duration="9064000" />
+      <workItem from="1789366746879" duration="9808000" />
+      <workItem from="1789522461026" duration="8728000" />
     </task>
     <task id="LOCAL-00001" summary="Usuario">
       <option name="closed" value="true" />
@@ -364,6 +434,26 @@
           <url>file://$PROJECT_DIR$/src/main/java/sofiao/minierp/config/SecurityConfig.java</url>
           <line>23</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/miniERP/src/app/features/reportes/reportes-productos.component.ts</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/miniERP/src/app/features/compras/compra-form.component.ts</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/miniERP/src/app/core/interceptors/auth.interceptors.ts</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/miniERP/src/app/core/services/cliente.service.ts</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
