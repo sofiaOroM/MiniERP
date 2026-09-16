@@ -82,7 +82,16 @@ public class UsuarioService {
         registrarLog(ELIMINAR, "Usuario desactivado: " + usuario.getUsername());
     }
 
-    private void registrarLog(Accion accion, String descripcion) {
+    @Transactional
+    public UsuarioResponse reactivar(Long id) {
+        Usuario usuario = usuarioRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Usuario no encontrado: " + id));
+        usuario.setActivo(true);
+        registrarLog(ACTUALIZAR, "Usuario reactivado: " + usuario.getUsername());
+        return UsuarioResponse.from(usuario);
+    }
+
+        private void registrarLog(Accion accion, String descripcion) {
         var auth = SecurityContextHolder.getContext().getAuthentication();
         UserPrincipal principal = (UserPrincipal) auth.getPrincipal();
         var actor = usuarioRepository.findById(principal.getId()).orElseThrow();
