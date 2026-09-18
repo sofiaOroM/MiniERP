@@ -46,9 +46,8 @@ public class VentaController {
 
     @GetMapping("/{id}/factura")
     @PreAuthorize("hasAnyRole('ADMINISTRACION','VENTAS')")
-    public ResponseEntity<FileSystemResource> descargarFactura(@PathVariable Long id,
-                                                               @RequestParam String pdfPath) {
-        File archivo = new File("." + pdfPath); // pdfPath ya viene como /facturas/FAC-...pdf
+    public ResponseEntity<FileSystemResource> descargarFactura(@PathVariable Long id) {
+        File archivo = ventaService.obtenerArchivoFactura(id);
         return ResponseEntity.ok()
                 .contentType(MediaType.APPLICATION_PDF)
                 .header(HttpHeaders.CONTENT_DISPOSITION, "inline; filename=\"" + archivo.getName() + "\"")

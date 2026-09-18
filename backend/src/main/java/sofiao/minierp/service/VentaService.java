@@ -10,6 +10,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.File;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDateTime;
@@ -103,6 +104,24 @@ public class VentaService {
     @Transactional(readOnly = true)
     public List<Object[]> top10ClientesPorMonto() {
         return ventaRepository.findTop10ClientesPorMonto();
+    }
+
+    @Transactional(readOnly = true)
+    public File obtenerArchivoFactura(Long ventaId) {
+        Venta venta = ventaRepository.findById(ventaId)
+                .orElseThrow(() -> new ResourceNotFoundException("Venta no encontrada: " + ventaId));
+
+        if (venta.getPdfPath() == null) {
+            throw new ResourceNotFoundException("Esta venta no tiene una factura en PDF generada.");
+        }
+
+        File archivo = new File("." + venta.getPdfPath());
+        if (!archivo.exists()) {
+            throw new ResourceNotFoundException(
+                    "El archivo de la factura no existe en el servidor. Si esta venta viene de la carga "
+                            + "inicial (seed), es normal: esos registros no generaron un PDF real en disco.");
+        }
+        return archivo;
     }
 
     private String generarNumeroFactura() {
