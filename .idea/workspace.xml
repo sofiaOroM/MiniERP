@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="00a83a4c-c386-490e-85aa-cb8f959504db" name="Changes" comment="Actualizacion de rutas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/controller/VentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/controller/VentaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/dto/producto/ProductoResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/dto/producto/ProductoResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/service/VentaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/service/VentaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,15 +119,7 @@
       <updated>1789199641599</updated>
       <workItem from="1789199643020" duration="14067000" />
       <workItem from="1789366746879" duration="9808000" />
-      <workItem from="1789522461026" duration="23725000" />
-    </task>
-    <task id="LOCAL-00018" summary="Manejo de roles">
-      <option name="closed" value="true" />
-      <created>1789404919253</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1789404919253</updated>
+      <workItem from="1789522461026" duration="25503000" />
     </task>
     <task id="LOCAL-00019" summary="Manejo de compras">
       <option name="closed" value="true" />
@@ -509,7 +505,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789763316273</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Actualizacion de rutas">
+      <option name="closed" value="true" />
+      <created>1789770249661</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1789770249661</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
