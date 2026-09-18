@@ -41,6 +41,16 @@ export const routes: Routes = [
         canActivate: [roleGuard(TODOS)],
         loadComponent: () => import('./features/categorias/categoria-list.component').then((m) => m.CategoriaListComponent)
       },
+      {
+        path: 'categorias/nueva',
+        canActivate: [roleGuard(['ADMINISTRACION'])],
+        loadComponent: () => import('./features/categorias/categoria-form.component').then((m) => m.CategoriaFormComponent)
+      },
+      {
+        path: 'categorias/:id/editar',
+        canActivate: [roleGuard(['ADMINISTRACION'])],
+        loadComponent: () => import('./features/categorias/categoria-form.component').then((m) => m.CategoriaFormComponent)
+      },
 
       // ---------- Proveedores: ADMINISTRACION/COMPRAS (CRUD), INVENTARIO (lectura) ----------
       {
@@ -105,6 +115,16 @@ export const routes: Routes = [
         path: 'usuarios',
         canActivate: [roleGuard(['ADMINISTRACION'])],
         loadComponent: () => import('./features/usuarios/usuario-list.component').then((m) => m.UsuarioListComponent)
+      },
+      {
+        path: 'usuarios/nuevo',
+        canActivate: [roleGuard(['ADMINISTRACION'])],
+        loadComponent: () => import('./features/usuarios/usuario-form.component').then((m) => m.UsuarioFormComponent)
+      },
+      {
+        path: 'usuarios/:id/editar',
+        canActivate: [roleGuard(['ADMINISTRACION'])],
+        loadComponent: () => import('./features/usuarios/usuario-form.component').then((m) => m.UsuarioFormComponent)
       },
 
       // ---------- Inventario: historial visible para todos, ajustes solo INVENTARIO ----------

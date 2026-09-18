@@ -4,69 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00a83a4c-c386-490e-85aa-cb8f959504db" name="Changes" comment="Manejo de categorias">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/dto/reportes/LogResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/guards/auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/guards/role.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/interceptors/auth.interceptors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/interceptors/error.interceptor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/auth.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/cliente.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/compra.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/inventario.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/producto.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/proveedor.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/usuario.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/models/venta.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/cliente.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/compra.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/inventario.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/notificacion.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/producto.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/proveedor.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/reporte.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/usuario.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/core/services/venta.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/categorias/categoria-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/clientes/cliente-form.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/clientes/cliente-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/compras/compra-form.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/compras/compra-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/dashboard/dashboard.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/dashboard/inicio.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/inventario/ajuste-form.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/inventario/historial.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/login/login.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/productos/producto-form.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/productos/producto-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/proveedores/proveedor-form.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/proveedores/proveedor-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/reportes/reportes-compras.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/reportes/reportes-logs.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/reportes/reportes-productos.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/reportes/reportes-ventas.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/usuarios/usuario-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/ventas/venta-form.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/ventas/venta-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/shared/confirm-dialog/confirm-dialog.service.ts" afterDir="false" />
+    <list default="true" id="00a83a4c-c386-490e-85aa-cb8f959504db" name="Changes" comment="Manejo de reportes: Cada uno conectado al backend y el diseño de sus tablas">
       <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/shared/toast/toast.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/environments/environment.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/controller/ReportesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/controller/ReportesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/repository/LogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/repository/LogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/service/ReportesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/service/ReportesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/sofiao/minierp/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/miniERP/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/miniERP/src/app/features/dashboard/inicio.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/dashboard/inicio.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,119 +118,7 @@
       <updated>1789199641599</updated>
       <workItem from="1789199643020" duration="14067000" />
       <workItem from="1789366746879" duration="9808000" />
-      <workItem from="1789522461026" duration="8728000" />
-    </task>
-    <task id="LOCAL-00001" summary="Usuario">
-      <option name="closed" value="true" />
-      <created>1789345691100</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1789345691100</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Inicial">
-      <option name="closed" value="true" />
-      <created>1789345777761</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1789345777761</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Manejo de Usuarios">
-      <option name="closed" value="true" />
-      <created>1789373055274</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1789373055274</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Manejo de Proveedores">
-      <option name="closed" value="true" />
-      <created>1789373109913</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1789373109913</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Manejo de Productos">
-      <option name="closed" value="true" />
-      <created>1789373160624</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1789373160625</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Manejo de Clientes">
-      <option name="closed" value="true" />
-      <created>1789373183752</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1789373183752</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Manejo de Compras">
-      <option name="closed" value="true" />
-      <created>1789373307965</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1789373307965</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Manejo de Categorias">
-      <option name="closed" value="true" />
-      <created>1789373343463</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1789373343463</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Manejo de Ventas">
-      <option name="closed" value="true" />
-      <created>1789373531730</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1789373531730</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Excepciones">
-      <option name="closed" value="true" />
-      <created>1789373552425</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1789373552425</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Excepciones">
-      <option name="closed" value="true" />
-      <created>1789404313866</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1789404313866</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Autenticación">
-      <option name="closed" value="true" />
-      <created>1789404346841</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1789404346841</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Login">
-      <option name="closed" value="true" />
-      <created>1789404431081</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1789404431081</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Manejo del inventario">
-      <option name="closed" value="true" />
-      <created>1789404654126</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1789404654126</updated>
+      <workItem from="1789522461026" duration="22974000" />
     </task>
     <task id="LOCAL-00015" summary="Seguridad">
       <option name="closed" value="true" />
@@ -394,38 +224,327 @@
       <option name="project" value="LOCAL" />
       <updated>1789405254003</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Inicial Frontend">
+      <option name="closed" value="true" />
+      <created>1789546226702</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1789546226703</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Inicial Frontend">
+      <option name="closed" value="true" />
+      <created>1789546241623</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1789546241623</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Styles Frontend">
+      <option name="closed" value="true" />
+      <created>1789546278194</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1789546278194</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Main Frontend">
+      <option name="closed" value="true" />
+      <created>1789546295810</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1789546295810</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Manejo de autenticación">
+      <option name="closed" value="true" />
+      <created>1789546375817</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1789546375817</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Login Frontend">
+      <option name="closed" value="true" />
+      <created>1789546512723</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1789546512723</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Dashboard general y página inicial">
+      <option name="closed" value="true" />
+      <created>1789546712125</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1789546712125</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Inicial">
+      <option name="closed" value="true" />
+      <created>1789546748029</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1789546748029</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Panel de usuarios en frontend">
+      <option name="closed" value="true" />
+      <created>1789546810735</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1789546810735</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Correción para reactivación de usuarios">
+      <option name="closed" value="true" />
+      <created>1789546847548</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1789546847548</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Sección de categorías">
+      <option name="closed" value="true" />
+      <created>1789546931275</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1789546931276</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Manejo de productos en frontend">
+      <option name="closed" value="true" />
+      <created>1789546965067</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1789546965067</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Manejo de proveedores en frontend">
+      <option name="closed" value="true" />
+      <created>1789547082851</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1789547082851</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Manejo de clientes en frontend">
+      <option name="closed" value="true" />
+      <created>1789598625226</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1789598625226</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Manejo de compras en frontend">
+      <option name="closed" value="true" />
+      <created>1789598668648</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1789598668648</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Manejo de auto ajuste en frontend">
+      <option name="closed" value="true" />
+      <created>1789598773743</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1789598773744</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Manejo de confirm en frontend">
+      <option name="closed" value="true" />
+      <created>1789598825048</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1789598825048</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Manejo de inventario en frontend">
+      <option name="closed" value="true" />
+      <created>1789598856688</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1789598856688</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Mejoras para filtrado de productos">
+      <option name="closed" value="true" />
+      <created>1789598913267</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1789598913267</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Manejo de Ventas en Frontend con mejoras incluidas">
+      <option name="closed" value="true" />
+      <created>1789598999948</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1789598999948</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Mejoras en el manejo de usuarios: busqueda filtrada y form para editar y crear">
+      <option name="closed" value="true" />
+      <created>1789599080029</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1789599080029</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Implementaciones en el manejo de usuarios:Get Para editar">
+      <option name="closed" value="true" />
+      <created>1789599128166</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1789599128166</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Implementaciones en el manejo de usuarios:Put Para editar la contraseña">
+      <option name="closed" value="true" />
+      <created>1789599202068</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1789599202069</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Implementaciones en el perfil de usuario: conexión al Put Para editar la contraseña">
+      <option name="closed" value="true" />
+      <created>1789599236005</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1789599236005</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Implementaciones en el perfil de usuario: conexión al Put Para editar la contraseña">
+      <option name="closed" value="true" />
+      <created>1789599251181</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1789599251181</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Implementaciones en el manejo de categorias: Get para obtener información de categoria">
+      <option name="closed" value="true" />
+      <created>1789599367342</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1789599367342</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Implementaciones en el manejo de categorias: Conexión Get y mejoras en el formulario de creación y edición con busqueda">
+      <option name="closed" value="true" />
+      <created>1789599415147</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1789599415147</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Mejoras en list-Proveedores: Busqueda para filtrar proveedores">
+      <option name="closed" value="true" />
+      <created>1789599486755</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1789599486755</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Configuraciones">
+      <option name="closed" value="true" />
+      <created>1789599520285</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1789599520285</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Mejoras para captura de errores y excepciones">
+      <option name="closed" value="true" />
+      <created>1789599686755</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1789599686755</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Manejo de roles">
+      <option name="closed" value="true" />
+      <created>1789599720884</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1789599720884</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Manejo de seguridad para la actualización de contraseña">
+      <option name="closed" value="true" />
+      <created>1789600175491</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1789600175491</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Manejo de mensajes">
+      <option name="closed" value="true" />
+      <created>1789600285359</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1789600285359</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Manejo de logs">
+      <option name="closed" value="true" />
+      <created>1789600326203</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1789600326203</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Implementación de reportes de Logs y Productos">
+      <option name="closed" value="true" />
+      <created>1789600400347</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1789600400347</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Manejo de reportes: Cada uno conectado al backend y el diseño de sus tablas">
+      <option name="closed" value="true" />
+      <created>1789600475141</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1789600475141</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Usuario" />
-    <MESSAGE value="Inicial" />
-    <MESSAGE value="Manejo de Usuarios" />
-    <MESSAGE value="Manejo de Proveedores" />
-    <MESSAGE value="Manejo de Productos" />
-    <MESSAGE value="Manejo de Clientes" />
-    <MESSAGE value="Manejo de Compras" />
-    <MESSAGE value="Manejo de Categorias" />
-    <MESSAGE value="Manejo de Ventas" />
-    <MESSAGE value="Excepciones" />
-    <MESSAGE value="Autenticación" />
-    <MESSAGE value="Login" />
-    <MESSAGE value="Manejo del inventario" />
-    <MESSAGE value="Configuración" />
-    <MESSAGE value="Clientes y Usuarios" />
+    <MESSAGE value="Sección de categorías" />
+    <MESSAGE value="Manejo de productos en frontend" />
+    <MESSAGE value="Manejo de proveedores en frontend" />
+    <MESSAGE value="Manejo de clientes en frontend" />
+    <MESSAGE value="Manejo de compras en frontend" />
+    <MESSAGE value="Manejo de auto ajuste en frontend" />
+    <MESSAGE value="Manejo de confirm en frontend" />
+    <MESSAGE value="Manejo de inventario en frontend" />
+    <MESSAGE value="Mejoras para filtrado de productos" />
+    <MESSAGE value="Manejo de Ventas en Frontend con mejoras incluidas" />
+    <MESSAGE value="Mejoras en el manejo de usuarios: busqueda filtrada y form para editar y crear" />
+    <MESSAGE value="Implementaciones en el manejo de usuarios:Get Para editar" />
+    <MESSAGE value="Implementaciones en el manejo de usuarios:Put Para editar la contraseña" />
+    <MESSAGE value="Implementaciones en el perfil de usuario: conexión al Put Para editar la contraseña" />
+    <MESSAGE value="Implementaciones en el manejo de categorias: Get para obtener información de categoria" />
+    <MESSAGE value="Implementaciones en el manejo de categorias: Conexión Get y mejoras en el formulario de creación y edición con busqueda" />
+    <MESSAGE value="Mejoras en list-Proveedores: Busqueda para filtrar proveedores" />
+    <MESSAGE value="Configuraciones" />
+    <MESSAGE value="Mejoras para captura de errores y excepciones" />
     <MESSAGE value="Manejo de roles" />
-    <MESSAGE value="Manejo de compras" />
-    <MESSAGE value="Seguridad" />
-    <MESSAGE value="Manejo de ventas" />
-    <MESSAGE value="Manejo de proveedores" />
-    <MESSAGE value="Manejo de productos" />
-    <MESSAGE value="Manejo de Logs" />
-    <MESSAGE value="Enum Acciones, Metodos de costeo, modulos" />
-    <MESSAGE value="Manejo de categorias" />
-    <option name="LAST_COMMIT_MESSAGE" value="Manejo de categorias" />
+    <MESSAGE value="Manejo de seguridad para la actualización de contraseña" />
+    <MESSAGE value="Manejo de mensajes" />
+    <MESSAGE value="Manejo de logs" />
+    <MESSAGE value="Implementación de reportes de Logs y Productos" />
+    <MESSAGE value="Manejo de reportes: Cada uno conectado al backend y el diseño de sus tablas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Manejo de reportes: Cada uno conectado al backend y el diseño de sus tablas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
