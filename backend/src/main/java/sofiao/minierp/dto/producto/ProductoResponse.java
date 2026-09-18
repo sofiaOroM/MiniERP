@@ -21,7 +21,7 @@ public record ProductoResponse(
     public static ProductoResponse from(Producto p, Integer existenciaActual) {
         return new ProductoResponse(
                 p.getId(), p.getCodigo(), p.getNombre(), p.getDescripcion(),
-                p.getCategoria().getNombre(), p.getUnidadMedida(),
+                p.getCategoria.getId(), p.getCategoria().getNombre(), p.getUnidadMedida(),
                 p.getPrecioVenta(), p.getCostoReferencia(), p.getStockMinimo(),
                 existenciaActual, p.getMetodoCosteo().name(), p.getActivo()
         );
