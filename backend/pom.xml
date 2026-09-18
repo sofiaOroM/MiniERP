@@ -12,10 +12,10 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.cunoc</groupId>
-    <artifactId>miniapp-backend</artifactId>
+    <groupId>sofiao.minierp</groupId>
+    <artifactId>minierp-backend</artifactId>
     <version>1.0.0</version>
-    <name>miniapp-backend</name>
+    <name>minierp-backend</name>
     <description>Mini ERP - Servidor (Spring Boot + Java 21 + PostgreSQL)</description>
 
     <properties>
