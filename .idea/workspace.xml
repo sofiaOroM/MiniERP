@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00a83a4c-c386-490e-85aa-cb8f959504db" name="Changes" comment="Manejo de reportes: Cada uno conectado al backend y el diseño de sus tablas">
-      <change afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/shared/toast/toast.component.ts" afterDir="false" />
+    <list default="true" id="00a83a4c-c386-490e-85aa-cb8f959504db" name="Changes" comment="Actualizacion de rutas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/miniERP/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/miniERP/src/app/features/dashboard/inicio.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/miniERP/src/app/features/dashboard/inicio.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,31 +115,7 @@
       <updated>1789199641599</updated>
       <workItem from="1789199643020" duration="14067000" />
       <workItem from="1789366746879" duration="9808000" />
-      <workItem from="1789522461026" duration="22974000" />
-    </task>
-    <task id="LOCAL-00015" summary="Seguridad">
-      <option name="closed" value="true" />
-      <created>1789404749650</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1789404749650</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Configuración">
-      <option name="closed" value="true" />
-      <created>1789404791844</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1789404791844</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Clientes y Usuarios">
-      <option name="closed" value="true" />
-      <created>1789404895070</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1789404895070</updated>
+      <workItem from="1789522461026" duration="23725000" />
     </task>
     <task id="LOCAL-00018" summary="Manejo de roles">
       <option name="closed" value="true" />
@@ -512,16 +485,37 @@
       <option name="project" value="LOCAL" />
       <updated>1789600475141</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Tarjeta de notificacines">
+      <option name="closed" value="true" />
+      <created>1789763256872</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1789763256872</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Mejora en inicio incluido panel de actualización de contraseña">
+      <option name="closed" value="true" />
+      <created>1789763295740</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1789763295740</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Actualizacion de rutas">
+      <option name="closed" value="true" />
+      <created>1789763316273</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1789763316273</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Sección de categorías" />
-    <MESSAGE value="Manejo de productos en frontend" />
-    <MESSAGE value="Manejo de proveedores en frontend" />
     <MESSAGE value="Manejo de clientes en frontend" />
     <MESSAGE value="Manejo de compras en frontend" />
     <MESSAGE value="Manejo de auto ajuste en frontend" />
@@ -544,7 +538,10 @@
     <MESSAGE value="Manejo de logs" />
     <MESSAGE value="Implementación de reportes de Logs y Productos" />
     <MESSAGE value="Manejo de reportes: Cada uno conectado al backend y el diseño de sus tablas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Manejo de reportes: Cada uno conectado al backend y el diseño de sus tablas" />
+    <MESSAGE value="Tarjeta de notificacines" />
+    <MESSAGE value="Mejora en inicio incluido panel de actualización de contraseña" />
+    <MESSAGE value="Actualizacion de rutas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion de rutas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
